@@ -1,0 +1,16 @@
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 85%;
+}
+.carousel-track {
+  display: flex;
+  gap: .0rem;
+  /* Adjust width to fit all cards and allow seamless looping */
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
