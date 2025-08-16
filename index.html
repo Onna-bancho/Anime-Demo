@@ -11,7 +11,7 @@
 
     </head>  
     <body class="bg-black backdrop-blur-none">
-        <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+
         <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
         <div class="bg-black">
             <div class="relative w-full">
@@ -51,47 +51,6 @@
             <h1 class="flex justify-center mt-5 text-5xl sm:text-6xl font-bold text-pink-700/100">Anime Demo</h1>
         </div>
 
-        <section class="max-w-7xl mx-auto px-4 py-12 mt-40">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-pink-500 mb-8 text-center">Anime Showcase</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
-                    <img src="img/one-piece.gif" alt="One Piece" class="w-full h-48 object-cover" />
-                    <div class="p-4 flex-1 flex flex-col justify-between">
-                        <h3 class="text-pink-400 text-xl font-bold mb-2">One Piece</h3>
-                        <p class="text-white text-sm mb-4">Join Luffy and his crew on a legendary adventure for the ultimate treasure!</p>
-                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
-                    </div>
-                </div>
-                
-                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
-                    <img src="img/demon-slayer.gif" alt="Demon Slayer" class="w-full h-48 object-cover" />
-                    <div class="p-4 flex-1 flex flex-col justify-between">
-                        <h3 class="text-pink-400 text-xl font-bold mb-2">Demon Slayer</h3>
-                        <p class="text-white text-sm mb-4">Tanjiro battles demons to save his sister and avenge his family.</p>
-                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
-                    </div>
-                </div>
-                
-                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
-                    <img src="img/jujutsu-kaisen.gif" alt="Jujutsu Kaisen" class="w-full h-48 object-cover" />
-                    <div class="p-4 flex-1 flex flex-col justify-between">
-                        <h3 class="text-pink-400 text-xl font-bold mb-2">Jujutsu Kaisen</h3>
-                        <p class="text-white text-sm mb-4">Yuji Itadori enters the world of curses and sorcerers to protect humanity.</p>
-                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
-                    </div>
-                </div>
-                
-                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
-                    <img src="img/tokyo-ghoul.gif" alt="Tokyo Ghoul" class="w-full h-48 object-cover" />
-                    <div class="p-4 flex-1 flex flex-col justify-between">
-                        <h3 class="text-pink-400 text-xl font-bold mb-2">Tokyo Ghoul</h3>
-                        <p class="text-white text-sm mb-4">Kaneki struggles with his identity in a world of humans and ghouls.</p>
-                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="max-w-7xl mx-auto px-4 py-12 mt-40">
             <h2 class="text-3xl md:text-4xl font-extrabold text-pink-500 mb-8 text-center">Anime Showcase</h2>
@@ -102,7 +61,22 @@
                     <div class="p-4 flex-1 flex flex-col justify-between">
                         <h3 class="text-pink-400 text-xl font-bold mb-2">One Piece</h3>
                         <p class="text-white text-sm mb-4">Join Luffy and his crew on a legendary adventure for the ultimate treasure!</p>
-                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                          <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                                                <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                                                    <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                                        <span class="like-count">0</span>
+                                                    </button>
+                                                    <div class="flex items-center gap-1">
+                                                        <span class="text-white text-xs">Rate:</span>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                                        <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                                                    </div>
+                                                </div>                   
                     </div>
                 </div>
                 
@@ -111,7 +85,22 @@
                     <div class="p-4 flex-1 flex flex-col justify-between">
                         <h3 class="text-pink-400 text-xl font-bold mb-2">Demon Slayer</h3>
                         <p class="text-white text-sm mb-4">Tanjiro battles demons to save his sister and avenge his family.</p>
-                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                                                <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                                                <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                                                    <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                                        <span class="like-count">0</span>
+                                                    </button>
+                                                    <div class="flex items-center gap-1">
+                                                        <span class="text-white text-xs">Rate:</span>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                                        <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                                                    </div>
+                                                </div>
                     </div>
                 </div>
                 
@@ -120,7 +109,22 @@
                     <div class="p-4 flex-1 flex flex-col justify-between">
                         <h3 class="text-pink-400 text-xl font-bold mb-2">Jujutsu Kaisen</h3>
                         <p class="text-white text-sm mb-4">Yuji Itadori enters the world of curses and sorcerers to protect humanity.</p>
-                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                                                <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                                                <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                                                    <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                                        <span class="like-count">0</span>
+                                                    </button>
+                                                    <div class="flex items-center gap-1">
+                                                        <span class="text-white text-xs">Rate:</span>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                                        <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                                                    </div>
+                                                </div>
                     </div>
                 </div>
                 
@@ -129,7 +133,129 @@
                     <div class="p-4 flex-1 flex flex-col justify-between">
                         <h3 class="text-pink-400 text-xl font-bold mb-2">Tokyo Ghoul</h3>
                         <p class="text-white text-sm mb-4">Kaneki struggles with his identity in a world of humans and ghouls.</p>
+                                                <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                                                <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                                                    <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                                        <span class="like-count">0</span>
+                                                    </button>
+                                                    <div class="flex items-center gap-1">
+                                                        <span class="text-white text-xs">Rate:</span>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                                        <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                                        <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                                                    </div>
+                                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="max-w-7xl mx-auto px-4 py-12 mt-40">
+                        <div class="flex items-center mb-8">
+                            <hr class="flex-1 border-t-2 border-pink-400 mr-4 hidden sm:block" />
+                            <h2 class="text-3xl md:text-4xl font-extrabold text-pink-500 text-center whitespace-nowrap">Anime of the moment</h2>
+                            <hr class="flex-1 border-t-2 border-pink-400 ml-4 hidden sm:block" />
+                        </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
+                    <img src="img/tokyo ghoul.jpg" alt="tokyo-ghoul" class="w-full h-48 object-cover" />
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="text-pink-400 text-xl font-bold mb-2">Tokyo Ghoul</h3>
+                        <p class="text-white text-sm mb-4">Kaneki struggles with his identity in a world of humans and ghouls.</p>
                         <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                        <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                            <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                <span class="like-count">0</span>
+                            </button>
+                            <div class="flex items-center gap-1">
+                                <span class="text-white text-xs">Rate:</span>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
+                    <img src="img/998446.jpg" alt="mob psycho 100" class="w-full h-48 object-cover" />
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="text-pink-400 text-xl font-bold mb-2">Mob Psycho 100</h3>
+                        <p class="text-white text-sm mb-4">Shigeo Kageyama, a.k.a. Mob, is a powerful esper who just wants to live a normal life.</p>
+                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                        <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                            <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                <span class="like-count">0</span>
+                            </button>
+                            <div class="flex items-center gap-1">
+                                <span class="text-white text-xs">Rate:</span>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
+                    <img src="img/551802.jpg" alt="Chainsaw man" class="w-full h-48 object-cover" />
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="text-pink-400 text-xl font-bold mb-2">Chainsaw man</h3>
+                        <p class="text-white text-sm mb-4">Denji, a young man with a chainsaw demon, battles devils for a chance at a better life.</p>
+                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                        <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                            <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                <span class="like-count">0</span>
+                            </button>
+                            <div class="flex items-center gap-1">
+                                <span class="text-white text-xs">Rate:</span>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-black bg-opacity-80 rounded-xl shadow-lg border-2 border-pink-500 overflow-hidden flex flex-col">
+                    <img src="img/25940-3840x2160-desktop-4k-attack-on-titan-the-final-season-wallpaper-image.jpg" alt="Attack-on-titans" class="w-full h-48 object-cover" />
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="text-pink-400 text-xl font-bold mb-2">Attack on Titan</h3>
+                        <p class="text-white text-sm mb-4">Eren and his friends fight for survival against terrifying Titans in a world under siege.</p>
+                        <a href="#" class="mt-auto text-pink-500 hover:text-pink-300 font-semibold">Learn More</a>
+                        <div class="flex flex-col sm:flex-row items-center justify-between mt-4 gap-2">
+                            <button class="like-btn flex items-center px-3 py-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition text-sm font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                                <span class="like-count">0</span>
+                            </button>
+                            <div class="flex items-center gap-1">
+                                <span class="text-white text-xs">Rate:</span>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="1">1</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="2">2</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="3">3</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="4">4</button>
+                                <button class="rate-btn px-2 py-1 bg-pink-400 hover:bg-pink-600 text-white rounded-full transition text-xs font-semibold" data-rate="5">5</button>
+                                <span class="rating-value text-pink-300 text-xs ml-2">0</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,35 +281,38 @@
         <div class="carousel-track">
             
             <div class="w-100 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/one-piece.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/376116.jpeg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/demon-slayer.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/tokyo-ghoul.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/Attack-on-titans.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/551802.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/solo-leveling.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/28946-3840x2160-desktop-4k-my-hero-academia-wallpaper-image.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/jujutsu-kaisen.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/25940-3840x2160-desktop-4k-attack-on-titan-the-final-season-wallpaper-image.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/tokyo-ghoul.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/25959-3840x2160-desktop-4k-attack-on-titan-the-final-season-wallpaper.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/derma.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/24474-1920x1080-desktop-1080p-demon-slayer-kimetsu-no-yaiba-wallpaper-image.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/my hero.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/998446.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/naruto.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            <img src="img/1189631.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
             </div>
             <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
-            <img src="img/hunter x.gif" class="w-full h-48 object-cover rounded" alt="Product 2" />
-            </div> 
+            <img src="img/565455.jpg" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            </div>
+            <div class="w-80 flex flex-col items-center bg-black rounded-lg shadow p-1">
+            <img src="img/jpeg(22)" class="w-full h-48 object-cover rounded" alt="Product 2" />
+            </div>
 
         </div>
         </div>
@@ -232,7 +361,7 @@
         </article>
 
 
-        <div class="carousel-wrapper bg-black mt-50 max-w-10xl mx-auto">
+        <div class="carousel-wrapper bg-black mt-70 max-w-10xl mx-auto">
         <div class="carousel-track">
             
             <div class="w-100 flex flex-col items-center bg-black rounded-lg shadow p-1">
@@ -271,7 +400,7 @@
                 
             
 
-        <footer class="bg-black border-t-2 border-red-500 mt-100 py-20">
+        <footer class="bg-black border-t-2 border-red-500 mt-50 py-20">
           <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
               <img src="img/Adobe Express - file(4).png" alt="Logo" class="h-12 w-12 rounded-full border-2 border-pink-500" />
