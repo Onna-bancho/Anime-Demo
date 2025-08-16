@@ -22,9 +22,10 @@
                     <a href="#" class="text-pink-500 hover:text-pink-400" aria-label="Discord"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.444.864-.608 1.249-1.844-.276-3.68-.276-5.486 0-.163-.385-.397-.874-.608-1.249a.077.077 0 00-.079-.037A19.736 19.736 0 003.683 4.369a.07.07 0 00-.032.027C.533 8.063-.319 11.68.099 15.257a.082.082 0 00.031.056c2.052 1.507 4.042 2.422 5.992 3.029a.077.077 0 00.084-.027c.461-.63.873-1.295 1.226-1.994a.076.076 0 00-.041-.104c-.652-.247-1.276-.549-1.872-.892a.077.077 0 01-.008-.127c.125-.094.25-.192.371-.291a.074.074 0 01.077-.01c3.927 1.793 8.18 1.793 12.061 0a.073.073 0 01.078.009c.122.099.246.198.371.291a.077.077 0 01-.006.127c-.597.343-1.221.645-1.874.892a.076.076 0 00-.04.104c.353.699.765 1.364 1.226 1.994a.076.076 0 00.084.027c1.95-.607 3.94-1.522 5.992-3.029a.077.077 0 00.031-.056c.5-4.177-.838-7.794-3.552-10.861a.061.061 0 00-.031-.027zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.974 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419z"/></svg></a>
                 </div>
             <header class="absolute inset-x-0 top-0 z-50">
+                <!-- Add aria-labels and ids for clickable areas -->
                 <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8 w-full">
                     <div class="flex items-center w-full">
-                        <a href="#" class="-m-1.5 p-1.5 hover:opacity-75">
+                        <a href="#" aria-label="Home" class="-m-1.5 p-1.5 hover:opacity-75">
                             <span class="text-pink-500 text-1xl font-bold gap-4 ml-2 md:ml-7 mt-2 md:mt-6">Anime Demo</span>
                         </a>
                         <div class="flex-1"></div>
@@ -35,8 +36,8 @@
                                     <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"/>
                                 </svg>
                             </button>
-                            <a href="#" class="px-1 py-1 md:px-2 md:py-2 text-white hover:bg-pink-600 transition text-sm md:text-base">Log In</a>
-                            <a href="#" class="px-1 py-1 md:px-2 md:py-2 text-pink-500 hover:bg-pink-500 hover:text-white transition text-sm md:text-base">Sign Up</a>
+                            <a href="#" aria-label="Log In" class="px-1 py-1 md:px-2 md:py-2 text-white hover:bg-pink-600 transition text-sm md:text-base">Log In</a>
+                            <a href="#" aria-label="Sign Up" class="px-1 py-1 md:px-2 md:py-2 text-pink-500 hover:bg-pink-500 hover:text-white transition text-sm md:text-base">Sign Up</a>
                         </div>
                     </div>
                 </nav>
@@ -278,7 +279,7 @@
             </div>
         </section>
         
-        <div class="carousel-wrapper bg-black mt-50 max-w-10xl mx-auto">
+        <div class="carousel-wrapper bg-black mt-50 max-w-10xl mx-auto relative">
         <div class="carousel-track">
 
             <div class="w-100 flex flex-col items-center bg-black rounded-lg shadow p-1">
