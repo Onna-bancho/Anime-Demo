@@ -1,4 +1,4 @@
-        // Smooth scroll for anchor links (About, Contact)
+// Smooth scroll for anchor links (About, Contact)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -9,40 +9,38 @@
         });
         });
 
-        // Email form validation and real sending logic
-        const emailForm = document.querySelector('form');
+        const emailForm = document.querySelector('form[action*="formspree"]');
         if (emailForm) {
-        emailForm.addEventListener('submit', async function(e) {
+          emailForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             const email = emailForm.querySelector('input[type="email"]').value;
             const message = emailForm.querySelector('textarea').value;
             if (!email || !message) {
-            alert('Please fill out both fields.');
-            return;
+              alert('Please fill out both fields.');
+              return;
             }
-            // Real sending logic using Formspree (free email API)
+            
             try {
-            const response = await fetch('https://formspree.io/f/mnqykqzj', {
+              const response = await fetch(emailForm.action, {
                 method: 'POST',
                 headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ email, message })
-            });
-            if (response.ok) {
-                alert('Thank you for contacting us, Otaku! We will reply soon.');
+              });
+              if (response.ok) {
+                alert('Thank you for contacting us, Otaku! Your message was sent to Anime Demo Gmail.');
                 emailForm.reset();
-            } else {
+              } else {
                 alert('Sorry, there was a problem sending your message. Please try again later.');
-            }
+              }
             } catch (error) {
-            alert('Network error. Please check your connection and try again.');
+              alert('Network error. Please check your connection and try again.');
             }
-        });
+          });
         }
-
-        // Responsive navbar toggle (if you add a hamburger menu for mobile)
+        
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
         if (navToggle && navMenu) {
@@ -50,12 +48,11 @@
             navMenu.classList.toggle('hidden');
         });
         }
-
-        // Simple carousel functionality (for your .carousel-track)
+ 
         const carouselTrack = document.querySelector('.carousel-track');
         if (carouselTrack) {
         let scrollAmount = 0;
-        const scrollStep = 300; // Adjust as needed
+        const scrollStep = 300;
         document.getElementById('carousel-next')?.addEventListener('click', () => {
             carouselTrack.scrollBy({ left: scrollStep, behavior: 'smooth' });
         });
